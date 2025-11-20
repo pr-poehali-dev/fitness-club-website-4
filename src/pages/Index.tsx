@@ -233,16 +233,16 @@ export default function Index() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-2xl">{trainer.name}</CardTitle>
-                  <CardDescription className="text-base">
-                    <div className="flex items-center gap-2 mt-2">
+                  <div className="space-y-1 mt-2">
+                    <div className="flex items-center gap-2 text-muted-foreground">
                       <Icon name="Award" size={18} className="text-primary" />
                       <span>{trainer.specialty}</span>
                     </div>
-                    <div className="flex items-center gap-2 mt-1">
+                    <div className="flex items-center gap-2 text-muted-foreground">
                       <Icon name="Clock" size={18} className="text-secondary" />
                       <span>{trainer.experience}</span>
                     </div>
-                  </CardDescription>
+                  </div>
                 </CardHeader>
               </Card>
             ))}
